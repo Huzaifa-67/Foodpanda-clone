@@ -1,0 +1,109 @@
+/* Footer Start 1 */
+.footer {
+    background-color: #FFFFFF; /* Light gray background */
+    /* padding: 40px 20px; */
+    margin-left: 70px;
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    color: #39434D; /* Text color */
+    font-family: Arial, sans-serif;
+}
+
+.footer-column {
+    width: 22%; /* Approx. 1/4 width per column */
+    min-width: 200px; /* Minimum width for responsiveness */
+}
+
+
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 10px;
+}
+
+.footer-column a {
+    text-decoration: none;
+    color: #39434D; /* Text color */
+    font-size: 18px; /* Adjust font size */
+    position: relative; /* Position for underline effect */
+    padding-bottom: 5px; /* Space for underline */
+    transition: color 0.3s ease; /* Smooth text color transition */
+}
+.footer-column a::after{
+    content: ""; /* Creates the underline */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px; /* Thickness of the underline */
+    background-color: #3a3939; /* Underline color */
+    transition: width 0.3s ease; /* Smooth underline transition */
+}
+.footer-column a:hover::after{
+    width: 100%; /* Extend the underline on hover */
+}
+
+.footer-column a:hover {
+    color: #070103; /* Change color on hover */
+}
+
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center; /* Center-align columns */
+    }
+
+    .footer-column {
+        width: 100%; /* Full width for each column */
+        margin-bottom: 20px; /* Spacing between columns */
+        text-align: center; /* Center-align text */
+    }
+}
+
+/* Footer End 1 */
+
+/* Absolutefooter */
+.Absolutefooter{
+    margin-top: 25px;
+    display: flex;
+    text-align: center;
+}
+.flogo{
+    font-size: 42px;
+    margin-top: -10px;
+    margin-left: 30px;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+}
+.line{
+    display: flex;
+    flex-direction: column;
+    background-color: #4b4446;
+    margin-top: 4px;
+    height: 40px;
+    width: 1.2px;
+    margin-left: 25px;
+}
+.fb{
+    border: 1px solid #acacac;
+    border-radius: 50px;
+    padding: 6px;
+    color: blue;
+    font-size: 25px;
+    margin-top: -35px;
+    margin-left: 1400px;
+}
+.ins{
+   color: #FF2884;
+    font-size: 25px;
+    margin-top: -37px;
+    margin-left: 1300px;
+}
+
+/* Absolutefooter */
